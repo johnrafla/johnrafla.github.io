@@ -1,95 +1,65 @@
 /* Cursor */
 
 #Home {
-    cursor: pointer;
-    }
-    
-    #Spotify {
-    cursor: pointer;
-    }
-    
-    #Gmail {
-    cursor: pointer;
-    }
-    
-    #Calendar {
-    cursor: pointer;
-    }
-    
-    
-    /* Hover */
-    
-    
-    
-    #Home:hover + #gif {
-      display: block;
-    }
-    
-    #Spotify:hover + #gif {
-      display: block;
-    }
-    
-    #Gmail:hover + #gif {
-      display: block;
-    }
-    
-    #Calendar:hover + #gif {
-      display: block;
-    }
-    
-    #Powerschool:hover + #gif {
-      display: block;
-    }
-    #Drive:hover + #gif {
-      display: block;
-    }
-    
-    
-    /* Active Links */
-    
-    
-    
-    #Home:active + #gif {
-      display: block;
-    }
-    
-    #Spotify:active + #gif {
-      display: block;
-    }
-    
-    #Gmail:active + #gif {
-      display: block;
-    }
-    
-    #Calendar:active + #gif {
-      display: block;
-    }
-    
-    #Powerschool:active + #gif {
-      display: block;
-    }
-    #Drive:active + #gif {
-      display: block;
-    }
-    
-    
-    /* The Gif CSS */
-    
-    
-    
-    #gif {
-      display: none;
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    
-    /* The Line CSS */
-    
-    
-    
-    #line {
-      display: none;
-    }
+  cursor: pointer;
+}
+
+#Spotify {
+  cursor: pointer;
+}
+
+#Gmail {
+  cursor: pointer;
+}
+
+#Calendar {
+  cursor: pointer;
+}
+
+
+.tab > div{
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  
+}
+
+/* Hover */
+
+.tab:hover > div {
+  width: 50px;
+  height: 10px;
+  display: block;
+  background-position: center;
+  background-image: url(Hover.gif);
+}
+
+
+/* Active Links */
+
+.current:active ~ #gif {
+  display: block;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/* The Gif CSS */
+
+#gif {
+  display: none;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/* The Line CSS */
+
+#line {
+  display: none;
+}
