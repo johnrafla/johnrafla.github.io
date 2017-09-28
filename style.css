@@ -16,23 +16,28 @@
   cursor: pointer;
 }
 
+.tab {
+  position: relative;
+}
 
-.tab > div{
+.tab > div {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  
 }
+
 
 /* Hover */
 
 .tab:hover > div {
-  width: 50px;
-  height: 10px;
   display: block;
   background-position: center;
-  background-image: url(Hover.gif);
+  background-image: url(https://johnrafla.github.io/Hover.gif);
+  background-size: 100%;
+  width: 50px;
+  height: 10px;
+  /* must have the same aspect ratio of the original */
 }
 
 
@@ -62,4 +67,16 @@
 
 #line {
   display: none;
+}
+
+
+/* container stuff */
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex: 1;
+  /*grow*/
 }
