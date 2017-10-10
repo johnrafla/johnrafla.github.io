@@ -36,6 +36,7 @@ height: 2em;
 </head>
 <body>
 
+  <div class="fixedheader"></div>
     <div class="se-pre-con"></div>    
 
     <style type="text/css">
@@ -48,6 +49,25 @@ height: 2em;
       height: 100%; z-index: 9999; 
       background: url(loader.gif) center no-repeat rgb(77, 74, 74);}
       
+      div.fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+}
+div.fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+}
+
       </style>
 
 
@@ -59,6 +79,18 @@ height: 2em;
         $(window).load(function() {
                 // Animate loader off screen
                 $(".se-pre-con").fadeOut("slow");;
+        });
+
+                // Wait for window load
+                $(window).load(function() {
+                // Animate loader off screen
+                $(".fixedheader").fadeOut("slow");;
+        });
+
+                // Wait for window load
+                $(window).load(function() {
+                // Animate loader off screen
+                $(".fixedfooter").fadeOut("slow");;
         });
 </script>
 
@@ -401,5 +433,8 @@ alertFrequency: "once"
       <img src="space.png" width="75" height"75"><img>
       </center>
       </middle>
+
+      <div class="fixedfooter"></div>
+
   </body>
   </html>
