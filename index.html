@@ -21,23 +21,91 @@
     <meta name="theme-color" content="#ffffff">  
     <style>
     body {
-        background-image: url("background.png");
+        background-image: url(background.png);
         margin: 0;
 padding: 0;
     }
-    div {
-height: auto; /* if more info comes on the page, it will stretch down */
-width: 1000px;
-margin: 0 auto; /* this will cause the div to be in the center */
-font-size: 16px; 
-height: 2em; 
-}
     </style>
 </head>
 <body>
 
   <div class="fixedheader"></div>
-    <div class="se-pre-con"></div>    
+    <div class="se-pre-con"></div> 
+    <div class="schedule" style="width:25%; background-color: rgb(65, 55, 55); height:1000; width:357px; border-radius: 30px; position:absolute; left:0; top:0;">
+      <!-- homeroom -->
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969167" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+    
+    <p></p>
+    
+      <!-- period 1 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969230" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+    
+    <p></p>
+    
+      <!-- period 2 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969231" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+    
+    <p></p>
+    
+      <!-- period 3 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969232" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+    
+    <p></p>
+    
+      <!-- period 4 -->
+      <div id="period">
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969233" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+      </div>
+    
+    <p></p>
+    
+      <!-- period 5 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969234" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+      
+    <p></p>
+      
+      <!-- lunch -->
+        <div id="period">
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969235" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+      </div>
+      
+    <p></p>
+      
+      <!-- period 6 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969236" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+      
+    <p></p>
+      
+      <!-- period 7 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969237" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+      
+    <p></p>
+      
+      <!-- period 8 -->
+    
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969238" frameborder="0" style="border-width:20px;" scrolling="no"></iframe>
+    
+      
+      <p></p>
+      
+      <!-- Dismissal -->
+      
+      <iframe width="308" height="159" src="https://w2.countingdownto.com/1969239" frameborder="0" style="border-width:20px;"></iframe>
+      
+    </div>   
 
     <style type="text/css">
       
@@ -229,7 +297,7 @@ alertFrequency: "once"
     <div>
         <a href="https://johnrafla.github.io" alt="Home" class="tab current">
           <img id="Home" src="Home.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -242,7 +310,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Spotify" target="_blank" class="tab current">
           <img id="Spotify" src="Spotify.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -255,7 +323,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Gmail" alt="Gmail" class="tab current">
           <img id="Gmail" src="Gmail.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -268,7 +336,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Calender" alt="Calender" class="tab current">
           <img id="Calendar" src="Calander.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -277,7 +345,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Powerschool" alt="Powerschool" class="tab current">
           <img id="Powerschool" src="Powerschool.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -290,7 +358,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Drive" alt="drive" class="tab current">
           <img id="Drive" src="Drive.png" height="50" width="50" alt="under">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -303,7 +371,7 @@ alertFrequency: "once"
     
         <a href="https://johnrafla.github.io/Schoology" alt="schoology" class="tab current">
           <img id="Schoology" src="Schoology.png" height="50" width="50">
-          <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+          <div id="" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
         </a>
     
     
@@ -406,11 +474,7 @@ alertFrequency: "once"
 </div>
   </center>
   </middle>
-  <middle>
-      <center>
-        <img src="space.png" height="50" width="50"><img>
-      </center>
-  </middle>
+
   <center>
     <middle>
       <b>
@@ -422,9 +486,11 @@ alertFrequency: "once"
   
   <center>
     <middle>
-      <div style="background-color: rgba(41, 145, 124, 0.904); height:600px; width:800px; border-radius: 30px;">
-      <iframe src="https://tlk.io/GroupChat" allowtransparency="false" frameborder="0" width="800px" height="600px"></iframe>
-      <script async src="https://tlk.io/embed.js" type="text/javascript"></script>
+      <div style="background-color: rgba(41, 145, 124, 0.904); height:400px; width:600px; border-radius: 30px;   bottom: -10px;
+      right: 20px;">
+          <iframe src="https://tlk.io/GroupChat" allowtransparency="false" frameborder="0" width="600px" height="400px" style="  bottom: -10px;
+          right: 20px;"></iframe>
+          <script async src="https://tlk.io/embed.js" type="text/javascript"></script>
       </div>
     </middle>
   </center>
