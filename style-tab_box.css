@@ -1,0 +1,123 @@
+
+          /* WelcomeText CSS */
+          #WelcomeText {
+            display: inline;
+            font-size: x-large; 
+            color: #2B1D1D;
+            font-family: "Times New Roman", Georgia, Serif;
+          }
+                  /* Cursor */
+          
+          #Home {
+            cursor: pointer;
+          }
+          
+          #Spotify {
+            cursor: pointer;
+          }
+          
+          #Gmail {
+            cursor: pointer;
+          }
+          
+          #Calendar {
+            cursor: pointer;
+          }
+          
+          .tab {
+            position: relative;
+            opacity: 1;
+          }
+
+          .current {
+            position: relative;
+            opacity: 1;
+          }
+          
+          .tab:active > div {
+            display: block;
+            opacity: 0.5;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            background-position: center;
+            background-image: url(https://johnrafla.github.io/Line.png);
+            background-size: 100%;
+            width: 50px;
+            height: 10px;
+          }
+
+          
+          
+          /* Hover */
+          
+          .tab:hover > div {
+            display: block;
+            background-position: center;
+            background-image: url(https://johnrafla.github.io/Hover.gif);
+            background-size: 100%;
+            width: 50px;
+            height: 10px;
+            opacity: 1;
+          }
+          
+          
+          /* Active Links */
+          
+          .tab:active > div {
+            display: block;
+            opacity: 0.2;
+            background-image: url(https://johnrafla.github.io/Line.png);
+            background-size: 100%;
+            width: 50px;
+            height: 10px;
+          }
+          
+          
+          /* The Gif CSS */
+          
+          #gif {
+            display: none;
+            visibility: hidden;
+          }
+          
+          
+          /* The Line CSS */
+          
+          #line {
+            display: none;
+          }
+
+          a:.tab.current > div {
+            color: transparent;
+            visibility: hidden;
+            }
+            a:active {
+            color: transparent;
+            }
+            a:visited {
+            color: transparent;
+            }
+            a:hover {
+            color: transparent;
+            }
+
+            .gaia.le.button {
+              opacity: 1;
+            }
+
+            .gaia.le.button:active {
+              background-color: rgb(125, 171, 247);
+              opacity: 0.75;
+              -webkit-transition: opacity .25s ease-in-out;
+              -moz-transition: opacity .25s ease-in-out;
+              -o-transition: opacity .25s ease-in-out;
+              transition: opacity .25s ease-in-out;
+              background-position: center;
+            }
+
+            .gaia.le.button:hover {
+              cursor: pointer;
+            }
+                  

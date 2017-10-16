@@ -16,16 +16,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style-tab_box.css">
+    
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">  
     <style>
     body {
-        background-image: url("background.png");
-        margin: 0;
-padding: 0;
-    }
-    div {
+      background-color: rgb(49, 192, 166);
+      background-image: url(background.png);
+      margin: 0;
+      padding: 0;
+  }
+  div#href-container {
 height: auto; /*if more info comes on the page, it will stretch down*/
 width: 1000px;
 margin: 0 auto; /*this will cause the div to be in the center*/
@@ -37,7 +41,6 @@ height: 2em;
 <body>
 
   <!-- Tawk.to Javascript -->
-  </FORM>
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -52,12 +55,27 @@ height: 2em;
 
   <middle>
       <center>
-  <img src="Image.png" style="width:304px;height:228px;border-radius:8px;">
+  <img src="Image.png" style="width:304px;height:100px;border-radius:8px;">
       </middle>
   </center>
+
+  <center>
+      <middle>
+        <div>
+  <img src="GoogleCalender_Text.png" style="height:60; width:400px;">
+        </div>
+      </middle>
+  </center>
+
+  <middle>
+      <center>
+  <img src="Image.png" style="width:304px;height:40px;">
+      </middle>
+  </center>
+
   <middle>
   <center>
-    <div>
+    <div id="href-container">
         <a href="https://johnrafla.github.io" alt="Home" class="tab current">
           <img id="Home" src="Home.png" height="50" width="50">
           <div style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
@@ -145,79 +163,7 @@ height: 2em;
         <div id="gif">
           <img src="Hover.gif" alt="gif" height="10" width="50">
         </div>
-        <style>
-            /* Cursor */
-    
-    #Home {
-      cursor: pointer;
-    }
-    
-    #Spotify {
-      cursor: pointer;
-    }
-    
-    #Gmail {
-      cursor: pointer;
-    }
-    
-    #Calendar {
-      cursor: pointer;
-    }
-    
-    .tab {
-      position: relative;
-    }
-    
-    .tab > div {
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    
-    /* Hover */
-    
-    .tab:hover > div {
-      display: block;
-      background-position: center;
-      background-image: url(https://johnrafla.github.io/Hover.gif);
-      background-size: 100%;
-      width: 50px;
-      height: 10px;
-      /* must have the same aspect ratio of the original */
-    }
-    
-    
-    /* Active Links */
-    
-    .current:active ~ #gif {
-      display: block;
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    
-    /* The Gif CSS */
-    
-    #gif {
-      display: none;
-      visibility: hidden;
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    
-    /* The Line CSS */
-    
-    #line {
-      display: none;
-    }
-            </style>
+
         <div id="line">
           <img src="Line.png" alt="line" height="10" width="50">
         </div>   
@@ -237,7 +183,7 @@ height: 2em;
         <img src="space.png" width="25" height"25"><img>
         </center>
         </middle>
-        <iframe src="https://calendar.google.com/calendar/embed?src=eskao6uid450i9hbm30pdsfd3rrmp02c%40import.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+        <iframe src="https://calendar.google.com/calendar/embed?src=eskao6uid450i9hbm30pdsfd3rrmp02c%40import.calendar.google.com&ctz=America/New_York" style="border-radius:20px;" width="800" height="600" frameborder="0" scrolling="no">
         </iframe>
 </center>
 </middle>
