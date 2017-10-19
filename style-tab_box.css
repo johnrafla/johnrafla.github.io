@@ -89,9 +89,8 @@
             display: none;
           }
 
-          a:.tab.current > div {
+            a {
             color: transparent;
-            visibility: hidden;
             }
             a:active {
             color: transparent;
