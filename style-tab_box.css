@@ -94,20 +94,25 @@
             color: transparent;
             }
 
-            .gaia.le.button {
-              opacity: 1;
+            .switcher_button {
+              display: inline-block;
+              font-size: large;
+              font-family: "Bitter",serif;
+              line-height: 1;
+              color: rgb(78, 77, 77);
+              background-color: #c7c7c7;
+              text-shadow: -1px 1px #a3aab1;
+              border-radius: 10px;
+              border-color: #817a7a;
             }
 
-            .gaia.le.button:active {
-              background-color: rgb(125, 171, 247);
-              opacity: 0.75;
-              -webkit-transition: opacity .25s ease-in-out;
-              -moz-transition: opacity .25s ease-in-out;
-              -o-transition: opacity .25s ease-in-out;
-              transition: opacity .25s ease-in-out;
-              background-position: center;
-            }
-
-            .gaia.le.button:hover {
+            .switcher_button:hover {
               cursor: pointer;
+              border-color: #8b9299;
+              color: #4e4c4c;
+              background-color: #aca0a0;
+            }
+
+            .switcher_button:active {
+              background-color: #817a7a;
             }

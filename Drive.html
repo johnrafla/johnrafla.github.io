@@ -29,12 +29,16 @@
     <meta name="msapplication-TileImage" content="https://johnrafla.github.io/favicons/mstile-144x144.png" />
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="height=device-height, initial-scale=1.0"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="drive.js"></script>
     <style>
     body {
       background-color: rgb(49, 192, 166);
       background-image: url(background.png);
       margin: 0;
       padding: 0;
+      background-repeat: none;
+      background-size: 100%;
   }
   div#href-container {
 height: auto; /*if more info comes on the page, it will stretch down*/
@@ -194,12 +198,43 @@ height: 2em;
 </center>
 </middle>
 
-<middle>
-  <center>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTZdYvTfqiQwZoAZ3bxqnvz3C82NpXHLdgUcua8gc__oNwZlsXXEZgHHD2qd1Av0zJ-QVogsWBqnf_D/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="669" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border-radius:20px;">
-</iframe>
-</center>
-</middle>
+
+<div style="text-align:center; padding:20px;">
+  <!-- History Button -->
+  <button id="history_button" class="switcher_button" style="padding: 15px 70px;">
+      History Folder
+  </button>
+
+  <!-- Language Arts Button -->
+    <button id="language_arts_button" class="switcher_button" style="display:none; padding: 15px 45px;">
+      Language Arts Folder
+    </button>
+</div>
+
+<!-- Language Arts Div -->
+<div id="language_arts">
+<div style="background-color: #383838; width:100%; border-radius:16px;">
+
+  <div style="text-align:center; background-color:#2A398F; border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
+    <p style="color:rgb(169, 181, 211); font-weight:bold; font-size: 30px;">Language Arts</p>
+  </div>
+    <iframe src="https://drive.google.com/embeddedfolderview?id=0B1JW-ZLfYGWec2NuU3BuT3dPVkE#grid" height="600" width="800" style="width:100%; height:600px; border:0;">
+    </iframe>
+</div>
+</div>
+
+
+<!-- History Div -->
+<div id="history" style="display:none;">
+<div style="background-color: #e0e0e0; width:100%; border-radius:16px;">
+
+  <div style="text-align:center; background-color:rgb(187, 127, 37); border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
+    <p style="color:rgb(66, 63, 59); font-weight:bold; font-size: 30px;">History</p>
+  </div>
+    <iframe src="https://drive.google.com/embeddedfolderview?id=0B1JW-ZLfYGWedUpFQjRxWXBsVzg#grid" height="600" width="800" style="width:100%; height:600px; border:0;">
+    </iframe>
+</div>
+</div>
 
 <middle>
     <center>

@@ -35,6 +35,8 @@
       background-image: url(background.png);
       margin: 0;
       padding: 0;
+      background-repeat: none;
+      background-size: 100%;
     }
     .container {
       position: relative;
@@ -55,20 +57,10 @@
 <script>
         // Wait for window load
         $(window).load(function() {
-                // Animate loader off screen
-                $(".se-pre-con").fadeOut("slow");;
-        });
-
-                // Wait for window load
-                $(window).load(function() {
-                // Animate loader off screen
-                $(".fixedheader").fadeOut("slow");;
-        });
-
-                // Wait for window load
-                $(window).load(function() {
-                // Animate loader off screen
-                $(".fixedfooter").fadeOut("slow");;
+        // Animate loader off screen
+        $(".fixedheader").fadeOut("slow");;
+        $(".fixedfooter").fadeOut("slow");;
+        $(".se-pre-con").fadeOut("slow");;
         });
 </script>
   
