@@ -22,8 +22,12 @@
     <meta name="msapplication-square310x310logo" content="https://johnrafla.github.io/favicons/mstile-310x310.png" />
     
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style-tab_box.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-preloader.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="https://johnrafla.github.io/favicons/mstile-144x144.png" />
@@ -35,8 +39,6 @@
       background-image: url(background.png);
       margin: 0;
       padding: 0;
-      background-repeat: none;
-      background-size: 100%;
     }
     .container {
       position: relative;
@@ -81,105 +83,65 @@
   <img src="MyFace.png" style="width:240px;height:180px;padding:20px;">
       </middle>
   </center>
-  <middle>
+
 
 
   <middle>
   <center>
-    <div style="width:25%; background-color: rgb(65, 55, 55); height:1000; width:350px; border-radius: 30px; right:0; top:0;">
-        <a href="https://johnrafla.github.io" alt="Home" class="tab current">
-          <img id="Home" src="Home.png" height="50" width="50" style="padding:10px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+    <div style="width:25%; background-color: rgb(65, 55, 55); height:1000; width:350px; border-radius: 30px; right:0; top:0; padding:5px;">
+        <a href="#Home" alt="Home" class="tab current">
+          <img id="HomeIcon" src="Home.png" height="50" width="50">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
         </a>
-    
-    
-    
-    
 
-    
-    
-    
-    
-        <a href="https://johnrafla.github.io/Spotify" target="_blank" class="tab current">
-          <img id="Spotify" src="Spotify.png" height="50" width="50" style="padding:10px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
-    
-    
-
-    
-    
-    
-    
-        <a href="https://johnrafla.github.io/Gmail" alt="Gmail" class="tab current">
-          <img id="Gmail" src="Gmail.png" height="50" width="50" style="padding:10px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
-    
-<br>
-
-    
-    
-    
-    
-        <a href="https://johnrafla.github.io/Calender" alt="Calender" class="tab current">
-          <img id="Calendar" src="Calander.png" height="50" width="50" style="padding:7px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
-
-    
-    
-        <a href="https://johnrafla.github.io/Powerschool" alt="Powerschool" class="tab current">
-          <img id="Powerschool" src="Powerschool.png" height="50" width="50" style="padding:7px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
-    
-    
-
-    
-    
-    
-    
-        <a href="https://johnrafla.github.io/Drive" alt="drive" class="tab current">
-          <img id="Drive" src="Drive.png" height="50" width="50" style="padding:7px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
-
-
-
-
-
-
-    
-        <a href="https://johnrafla.github.io/Schoology" alt="schoology" class="tab current">
-          <img id="Schoology" src="Schoology.png" height="50" width="50" style="padding:7px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
-        </a>
-    
-    
+        <img src="space.png" width="15" height="30">
         
 
+        <a href="#Spotify" class="tab current">
+          <img id="SpotifyIcon" src="Spotify.png" height="50" width="50">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
+    
+        <img src="space.png" width="15" height="30">
+        
+
+        <a href="#Gmail" alt="Gmail" class="tab current">
+          <img id="GmailIcon" src="Gmail.png" height="50" width="50">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
+
+<br>
+
+        <a href="#Calender" alt="Calender" class="tab current">
+          <img id="CalendarIcon" src="Calander.png" height="50" width="50" style="padding:10px;">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
     
 
-        <a href="https://johnrafla.github.io/Schedule" alt="schedule" class="tab current">
-          <img id="Schoology" src="Schedule.png" height="50" width="50" style="padding:7px;">
-          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid #red;"></div>
+        <a href="#Powerschool" alt="Powerschool" class="tab current">
+          <img id="PowerschoolIcon" src="Powerschool.png" height="50" width="50" style="padding:7px;">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
         </a>
     
     
-        <div id="gif">
-          <img src="Hover.gif" alt="gif" height="10" width="50">
-        </div>
+        <a href="#Drive" alt="drive" class="tab current">
+          <img id="DriveIcon" src="Drive.png" height="50" width="50" style="padding:7px;">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
+    
+
+        <a href="#Schoology" alt="schoology" class="tab current">
+          <img id="SchoologyIcon" src="Schoology.png" height="50" width="50" style="padding:7px;">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
+
+
+        <a href="#Schedule" alt="schedule" class="tab current">
+          <img id="ScheduleIcon" src="Schedule.png" height="50" width="50" style="padding:7px;">
+          <div id="box" style="position: absolute; left: 0; right: 0; width: 50px; border-bottom: 1px solid transparent;"></div>
+        </a>
+
+
 
         <div id="line">
           <img src="Line.png" alt="line" height="10" width="50">
@@ -187,38 +149,215 @@
   </center>
   </middle>
 
-  <middle>
-    <center>
-<img src="Image.png" style="width:304px;height:100px;border-radius:8px;">
-    </middle>
-</center>
-<middle>
-  
-  <middle>
-  <center>
-<div>
-<img src="Line.png" width="90%" height="20" style="border-radius:7px;">
-</div>
-  </center>
-  </middle>
 
-  <center>
-    <middle>
-      <b>
-      <p style="font-size:30px; color: darkslategrey;" font-family: "Times New Roman", Georgia, Serif;>Group Chat - Sign in to Chat</p>
-      <p style="font-size:large; color: darkslategrey;" font-family: "Times New Roman", Georgia, Serif;>Leave a Message Here or Chat With Other Users</p>
-    </b>
-  </middle>
-  </center>
+<img src="Image.png" style="width:304px;height:100px;border-radius:8px;">
   
-  <center>
-    <middle>
-      <div style="background-color: rgb(41, 145, 123); width:100%; height:100%; border-radius: 30px; bottom: -10px; right: 20px;">
-          <iframe src="https://tlk.io/GroupChat" frameborder="0" width="100%" height="400" style="bottom: -10px; right: 20px;"></iframe>
-          <script async src="embed.js" type="text/javascript"></script>
+
+<center>
+  <middle>
+      <img src="Line.png" width="90%" height="20" style="border-radius:7px; vertical-align: middle;">
+  </middle>
+</center>
+
+<img src="Image.png" style="width:304px;height:100px;border-radius:8px;">
+
+
+
+<div class="content">
+    <!-- GroupChat -->
+  <div id="Home">
+      <center>
+          <middle>
+            <p style="font-size:30px; color: darkslategrey; font-weight:bold;" font-family: "Times New Roman", Georgia, Serif;>Group Chat - Sign in to Chat</p>
+              <p style="font-size:large; color: darkslategrey; font-weight:bold;" font-family: "Times New Roman", Georgia, Serif;>Leave a Message Here or Chat With Other Users</p>
+
+        <div style="width:100%;">
+           <div style="margin-left: auto; margin-right: auto; background-color: rgb(41, 145, 123); width:360px; height:100%; border-radius: 30px; bottom: -10px; right: 20px;">
+                <iframe src="https://tlk.io/GroupChat" frameborder="0" width="100%" height="410" style="bottom: -10px; right: 20px;"></iframe>
+                <script async src="embed.js" type="text/javascript"></script>
+            </div>
+        </div>
+          </middle>
+     </center>
+  </div>
+
+  <!-- Spotify -->
+  <div style="text-align:center;" id="Spotify">
+      <center>
+          <middle>
+           <iframe style="border-radius:3px;" src="https://open.spotify.com/embed/user/22dfrawajbxclwchrjdldixiq/playlist/3JoQFAuiillK54BrCaYBkJ" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+           <iframe width="300" height="380" scrolling="no" frameborder="no" style="border-radius:10px;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/320235170&amp;color=%232222a2&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false"></iframe>
+      </middle>
+    </center>
+  </div>
+
+  <!-- Gmail -->
+  <div style="text-align:center;" id="Gmail">
+    <center>
+      <middle>
+              <img src="Gmail_Text.png" style="height:40; width:300px;">
+          <div style="height:400px; width: 400px; border-radius:20px; background-color: #F7F7F7;">
+              <iframe src="login.html" height="100%" width="100%" frameborder="0" scrolling="no"></iframe>
+          </div>
+      </middle>
+    </center>
+    </div>
+
+  <!-- Calendar -->
+  <div style="text-align:center;" id="Calender">
+      <center>
+          <middle>
+            <div style="padding:50px;">
+              <img src="GoogleCalender_Text.png" style="height:60; width:400px;">
+          </div>
+              <iframe src="https://calendar.google.com/calendar/embed?src=eskao6uid450i9hbm30pdsfd3rrmp02c%40import.calendar.google.com&ctz=America/New_York" style="border-radius:10px;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </middle>
+        </center>
+    </div>
+
+  <!-- Powerschool -->
+  <div style="text-align:center;" id="Powerschool">
+      <center>
+          <middle>
+              <iframe src="Student and Parent Sign In.htm" height="408" width="650" frameborder="0" scrolling="no" style="border-radius:20px;"></iframe>              
+          </middle>
+        </center>
+    </div>
+
+  <!-- Drive -->
+
+
+  <div style="text-align:center;" id="Drive">
+      <center>
+          <middle>
+              <div>
+                  <img src="Drive_Text.png" style="height:80; width:600px;">
+              </div>
+              <div style="text-align:center; padding:20px;">
+                  <!-- History Button -->
+                  <button id="history_button" class="switcher_button" style="padding: 15px 70px;">
+                      History Folder
+                  </button>
+                
+                  <!-- Language Arts Button -->
+                    <button id="language_arts_button" class="switcher_button" style="display:none; padding: 15px 45px;">
+                      Language Arts Folder
+                    </button>
+                </div>
+                
+                <!-- Language Arts Div -->
+                <div id="language_arts">
+                <div style="background-color: #383838; width:100%; border-radius:16px;">
+                
+                  <div style="text-align:center; background-color:#2A398F; border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
+                    <p style="color:rgb(169, 181, 211); font-weight:bold; font-size: 30px;">Language Arts</p>
+                  </div>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0B1JW-ZLfYGWec2NuU3BuT3dPVkE#grid" height="600" width="800" style="width:100%; height:600px; border:0;">
+                    </iframe>
+                </div>
+                </div>
+                
+                
+                <!-- History Div -->
+                <div id="history" style="display:none;">
+                <div style="background-color: #e0e0e0; width:100%; border-radius:16px;">
+                
+                  <div style="text-align:center; background-color:rgb(187, 127, 37); border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
+                    <p style="color:rgb(66, 63, 59); font-weight:bold; font-size: 30px;">History</p>
+                  </div>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=0B1JW-ZLfYGWedUpFQjRxWXBsVzg#grid" height="600" width="800" style="width:100%; height:600px; border:0;"></iframe>
+                </div>
+                </div>          
+              </middle>
+        </center>
+    </div>
+
+  <!-- Schoology -->
+  <div style="text-align:center;" id="Schoology">
+    <div style="padding:20px;">
+      <img src="Schoology_Text.png" style="height:90px; width:500px; background-color:rgb(78, 78, 78); padding:20px; border-radius:20px;">
       </div>
-    </middle>
-  </center>
+      <center>
+          <middle>
+              <iframe src="Home _ Schoology.htm" height="500" width="100%" frameborder="0" scrolling="no" style="border-radius:20px; position:sticky;"></iframe>              
+          </middle>
+        </center>
+    </div>
+
+  <!-- Schedule -->
+  <div style="text-align:center;" id="Schedule">
+      <center>
+          <middle>
+              <div id="schedule" style="display:block; background-color:transparent; width:100%; height:auto 0; border-radius:30px; position:static; left:0; top:0;">
+                  <table border="0" style="flex:1; width:100%; position:relative; left:0; top:0;">
+                  
+              
+                      <div width="100%">
+                          <img src="Schedule_Text.gif" style="height:100px; width:300px; background-color:rgb(150, 147, 147); padding:6px; border-radius:20px;">
+                          <img src="space.png" height="7px" width="7px">
+                                <img src="ScheduleLogo.png" style="width:160px;height:100px; position:sticky;">
+                                </div>
+              
+                    
+                    <!-- Row 1 -->
+                    <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978145" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978146" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978148" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                    </tr>
+              
+              
+                    <!-- Row 2 -->
+                    <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978149" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978150" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978151" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                    </tr>
+              
+              
+                    <!-- Row 3 -->
+                    <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978152" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978126" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978153" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                    </tr>
+              
+              
+                    <!-- Row 4 -->
+                    <tr>
+                      <th rowspan="1"><iframe width="301" height="155" src="https://w2.countingdownto.com/1978154" frameborder="0" style="border-width:20px; border-radius:20px;" scrolling="no"></iframe></th>
+                      </tr>
+                      
+                      <img src="space.png" height="20px" width="20px">
+                    
+                    
+                        </table>
+                </div>
+          </middle>
+        </center>
+    </div>
+
+
+
+  </div>
   
   <img src="space.png" width="75" height="75">
 

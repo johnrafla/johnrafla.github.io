@@ -1,18 +1,18 @@
                   /* Cursor */
           
-          #Home {
+          #HomeIcon {
             cursor: pointer;
           }
           
-          #Spotify {
+          #SpotifyIcon {
             cursor: pointer;
           }
           
-          #Gmail {
+          #GmailIcon {
             cursor: pointer;
           }
           
-          #Calendar {
+          #CalendarIcon {
             cursor: pointer;
           }
           
@@ -26,7 +26,9 @@
             opacity: 1;
           }
           
-          .tab:active > div {
+
+          /* Hover */
+          .tab:hover > div {
             display: block;
             opacity: 0.5;
             -webkit-transition: opacity 1s ease-in-out;
@@ -39,25 +41,8 @@
             width: 50px;
             height: 10px;
           }
-
-          
-          
-          /* Hover */
           
           .tab:hover > div {
-            display: block;
-            background-position: center;
-            background-image: url(https://johnrafla.github.io/Hover.gif);
-            background-size: 100%;
-            width: 50px;
-            height: 10px;
-            opacity: 1;
-          }
-          
-          
-          /* Active Links */
-          
-          .tab:active > div {
             display: block;
             opacity: 0.2;
             background-image: url(https://johnrafla.github.io/Line.png);
@@ -65,13 +50,16 @@
             width: 50px;
             height: 10px;
           }
+
+          /* Active */
           
-          
-          /* The Gif CSS */
-          
-          #gif {
-            display: none;
-            visibility: hidden;
+          .tab:active > div {
+            display: block;
+            opacity: 1;
+            background-image: url(https://johnrafla.github.io/Line.png);
+            background-size: 100%;
+            width: 50px;
+            height: 10px;
           }
           
           
@@ -116,3 +104,28 @@
             .switcher_button:active {
               background-color: #817a7a;
             }
+
+
+            .content div#Home,
+            .content div#Spotify,
+            .content div#Gmail,
+            .content div#Calender,
+            .content div#Powerschool,
+            .content div#Drive,
+            .content div#Schoology,
+            .content div#Schedule {
+              visibility: hidden;
+              display: none;
+          }
+          
+          .content div#Home:target,
+          .content div#Spotify:target,
+          .content div#Gmail:target,
+          .content div#Calender:target,
+          .content div#Powerschool:target,
+          .content div#Drive:target,
+          .content div#Schoology:target,
+          .content div#Schedule:target {
+            visibility: visible;
+            display: block;
+        }
