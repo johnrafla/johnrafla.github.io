@@ -16,3 +16,12 @@ function drive() {
         });
     });
 }
+
+$(function() {
+    if ( document.location.href.indexOf('#') > -1 ) {
+        $('html, body').animate({scrollTop: '0px'}, 300);
+    }
+    else {
+        $(location).attr('href', '#Home')
+    }
+});
