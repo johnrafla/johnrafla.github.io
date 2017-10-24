@@ -196,7 +196,7 @@
     <center>
       <middle>
               <img src="Gmail_Text.png" style="height:40; width:300px;">
-          <div style="height:400px; width: 400px; border-radius:20px; background-color: #F7F7F7;">
+          <div style="height:400px; width: 375px; border-radius:20px; background-color: #F7F7F7;">
               <iframe src="login.html" height="100%" width="100%" frameborder="0" scrolling="no"></iframe>
           </div>
       </middle>
@@ -208,9 +208,9 @@
       <center>
           <middle>
             <div style="padding:50px;">
-              <img src="GoogleCalender_Text.png" style="height:60; width:400px;">
+              <img src="GoogleCalender_Text.png" style="height:60; width:350px;">
           </div>
-              <iframe src="https://calendar.google.com/calendar/embed?src=eskao6uid450i9hbm30pdsfd3rrmp02c%40import.calendar.google.com&ctz=America/New_York" style="border-radius:10px;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              <object data="https://calendar.google.com/calendar/embed?src=eskao6uid450i9hbm30pdsfd3rrmp02c%40import.calendar.google.com&ctz=America/New_York" style="border-radius:10px;" width="400" height="500"></object>
           </middle>
         </center>
     </div>
@@ -231,26 +231,26 @@
       <center>
           <middle>
               <div>
-                  <img src="Drive_Text.png" style="height:80; width:600px;">
+                  <img src="Drive_Text.png" style="height:80; width:350px;">
               </div>
               <div style="text-align:center; padding:20px;">
                   <!-- History Button -->
-                  <button id="history_button" class="switcher_button" style="padding: 15px 70px;">
+                  <button id="history_button" class="switcher_button" style=" display:none; padding: 15px 70px;">
                       History Folder
                   </button>
                 
-                  <!-- Language Arts Button -->
-                    <button id="language_arts_button" class="switcher_button" style="display:none; padding: 15px 45px;">
-                      Language Arts Folder
+                  <!-- Random Button -->
+                    <button id="random_folder_button" class="switcher_button" style="padding: 15px 45px;">
+                      Random Documents Folder
                     </button>
                 </div>
                 
-                <!-- Language Arts Div -->
-                <div id="language_arts">
+                <!-- Random Documents Div -->
+                <div id="Random" style="display:none;">
                 <div style="background-color: #383838; width:100%; border-radius:16px;">
                 
                   <div style="text-align:center; background-color:#2A398F; border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
-                    <p style="color:rgb(169, 181, 211); font-weight:bold; font-size: 30px;">Language Arts</p>
+                    <p style="color:rgb(169, 181, 211); font-weight:bold; font-size: 30px;">Random Documents</p>
                   </div>
                     <iframe src="https://drive.google.com/embeddedfolderview?id=0B1JW-ZLfYGWec2NuU3BuT3dPVkE#grid" height="600" width="800" style="width:100%; height:600px; border:0;">
                     </iframe>
@@ -259,7 +259,7 @@
                 
                 
                 <!-- History Div -->
-                <div id="history" style="display:none;">
+                <div id="history">
                 <div style="background-color: #e0e0e0; width:100%; border-radius:16px;">
                 
                   <div style="text-align:center; background-color:rgb(187, 127, 37); border-top-left-radius:16px; border-top-right-radius:16px; padding:14px;">
@@ -274,12 +274,9 @@
 
   <!-- Schoology -->
   <div style="text-align:center;" id="Schoology">
-    <div style="padding:20px;">
-      <img src="Schoology_Text.png" style="height:90px; width:500px; background-color:rgb(78, 78, 78); padding:20px; border-radius:20px;">
-      </div>
       <center>
           <middle>
-              <iframe src="Home _ Schoology.htm" height="500" width="100%" frameborder="0" scrolling="no" style="border-radius:20px; position:sticky;"></iframe>              
+              <iframe src="Home _ Schoology.htm" height="575" width="100%" frameborder="0" scrolling="no" style="border-radius:20px; position:sticky;"></iframe>              
           </middle>
         </center>
     </div>
@@ -295,7 +292,7 @@
                       <div width="100%">
                           <img src="Schedule_Text.gif" style="height:100px; width:300px; background-color:rgb(150, 147, 147); padding:6px; border-radius:20px;">
                           <img src="space.png" height="7px" width="7px">
-                                <img src="ScheduleLogo.png" style="width:160px;height:100px; position:sticky;">
+                                <img src="ScheduleLogo.png" style="width:160px;height:120px; position:sticky;">
                                 </div>
               
                     
@@ -360,6 +357,8 @@
   </div>
   
   <img src="space.png" width="75" height="75">
+
+  <div class="fixedfooter"></div>  
 
   </body>
   </html>
