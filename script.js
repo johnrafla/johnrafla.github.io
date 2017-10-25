@@ -34,18 +34,21 @@ $(function() {
     if ( document.location.href.indexOf('#Spotify') > -1 ) {
         document.title = 'Spotify';
     }
+});
 
 //* Gmail *//
 $(function() {
     if ( document.location.href.indexOf('#Gmail') > -1 ) {
         document.title = 'Gmail';
     }
+});
 
 //* Calendar *//
 $(function() {
     if ( document.location.href.indexOf('#Calender') > -1 ) {
         document.title = 'Calendar';
     }
+});
     
 //* Powerschool *//
 $(function() {
@@ -53,18 +56,21 @@ $(function() {
         location.reload();
         document.title = 'Powerschool';
     }
+});
     
 //* Drive *//
 $(function() {
     if ( document.location.href.indexOf('#Drive') > -1 ) {
         document.title = 'Drive';
     }
+});
 
 //* Schoology *//
 $(function() {
     if ( document.location.href.indexOf('#Schoology') > -1 ) {
         document.title = 'Schoology';
     }
+});
 
 //* Schedule *//
 $(function() {
