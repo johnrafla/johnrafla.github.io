@@ -1,3 +1,6 @@
+drive();
+
+function drive() {
     $(document).ready(function() {
         $("#history_button").click(function() {
             $("#Random").hide(300);
@@ -12,6 +15,7 @@
             $("#random_folder_button").hide();
         });
     });
+}
 
 $(function() {
     if ( document.location.href.indexOf('#') > -1 ) {
@@ -64,6 +68,7 @@ $(function() {
 
 //* Schedule *//
 $(function() {
-    if ( document.location.href.indexOf('#Schedule') > -1 ) {
+    if (document.location.href.indexOf('#Schedule') > -1) {
         document.title = 'Schedule';
     }
+});
