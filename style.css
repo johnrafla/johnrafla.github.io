@@ -4,7 +4,7 @@
             cursor: pointer;
           }
           
-          #SpotifyIcon {
+          #SoundCloudIcon {
             cursor: pointer;
           }
           
@@ -107,7 +107,7 @@
 
 
             .content div#Home,
-            .content div#Spotify,
+            .content div#SoundCloud,
             .content div#Gmail,
             .content div#Calender,
             .content div#Powerschool,
@@ -119,7 +119,7 @@
           }
           
           .content div#Home:target,
-          .content div#Spotify:target,
+          .content div#SoundCloud:target,
           .content div#Gmail:target,
           .content div#Calender:target,
           .content div#Powerschool:target,
