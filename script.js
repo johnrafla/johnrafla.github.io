@@ -18,11 +18,11 @@ function drive() {
 }
 
 $(function() {
-    if ( document.location.href.indexOf('#') > -1 ) {
+    if (document.location.href.indexOf('#') > -1 ) {
         $('html, body').animate({scrollTop: '0px'}, 300);
     }
-    else {
-        $(location).attr('href', '#Home');
+    else if (document.location.href.indexOf('johnrafla.github.io') > -1 ) {
+        $(location).attr('href', 'http://johnrafla.us.to/#Home');
     }
 });
 
