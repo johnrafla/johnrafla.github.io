@@ -1,3 +1,5 @@
+drive();
+
 function drive() {
     $(document).ready(function() {
         $("#history_button").click(function() {
@@ -13,13 +15,14 @@ function drive() {
             $("#random_folder_button").hide();
         });
     });
+}
 
 $(function() {
     if (document.location.href.indexOf('#') > -1 ) {
         $('html, body').animate({scrollTop: '0px'}, 300);
     }
     else if (document.location.href.indexOf('johnrafla.github.io') > -1 ) {
-        $(location).attr('href', '#Home');
+        $(location).attr('href', 'http://johnrafla.us.to/#Home');
     }
 });
 
